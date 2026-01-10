@@ -16,5 +16,5 @@ sudo bootc switch ghcr.io/bqcuong/bazzite4dev:latest
 * golang
 
 #### Utilities
-* zsh + Oh My Zsh
+* zsh
 * htop
