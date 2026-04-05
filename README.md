@@ -1,4 +1,4 @@
-# bazzite4dev
+# catomic
 
 A custom [Bluefin](https://github.com/ublue-os/bluefin) image, meant to support development activities alongside gaming.
 
