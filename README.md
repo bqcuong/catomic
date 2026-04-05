@@ -1,13 +1,13 @@
 # bazzite4dev
 
-This is my custom [Bazzite](https://github.com/ublue-os/bazzite) image, meant to support development activities alongside gaming.
+A custom [Bluefin](https://github.com/ublue-os/bluefin) image, meant to support development activities alongside gaming.
 
 ## Installation
 
-If you wish to use my image, you can rebase from an existing Bazzite KDE Plasma installation.
+If you wish to use this image, you can rebase from an existing Fedora Atomic installation (having `bootc` installed).
 
 ```bash
-sudo bootc switch ghcr.io/bqcuong/bazzite4dev:latest
+sudo bootc switch ghcr.io/bqcuong/catomic:latest
 ```
 
 ## Packages
