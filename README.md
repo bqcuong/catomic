@@ -9,12 +9,3 @@ If you wish to use this image, you can rebase from an existing Fedora Atomic ins
 ```bash
 sudo bootc switch ghcr.io/bqcuong/catomic:latest
 ```
-
-## Packages
-### Layering Packages
-#### Programming
-* golang
-
-#### Utilities
-* zsh
-* htop
