@@ -8,6 +8,6 @@ RUN rm /opt && mkdir /opt
 
 RUN --mount=type=tmpfs,dst=/tmp \
 	--mount=type=bind,from=ctx,source=/,target=/ctx \
-	/ctx/build.sh
+	/ctx/00_build.sh
     
 RUN bootc container lint

@@ -1,12 +1,5 @@
 #!/bin/bash
-
-set -ouex pipefail
-
-# Install packages
-dnf5 install -y \
-	zsh \
-	htop \
-	golang
+set -oue pipefail
 
 tee /etc/yum.repos.d/vscode.repo <<'EOF'
 [code]
@@ -17,5 +10,8 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 sed -i "s/enabled=.*/enabled=0/g" /etc/yum.repos.d/vscode.repo
-dnf -y install --enablerepo=code \
-    code
+
+dnf -y install --enablerepo=code code
+
+# cleanup repo file
+rm -f /etc/yum.repos.d/vscode.repo
