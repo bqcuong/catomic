@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eou pipefail
 
-source /ctx/copr-helpers.sh
+source /ctx/utils/copr-helpers.sh
 
 copr_install_isolated "dejan/lazygit" lazygit
 
